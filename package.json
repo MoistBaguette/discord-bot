@@ -16,7 +16,7 @@
     "needle": "^1.4.3",
     "rimraf": "^2.5.4",
     "sanitize-filename": "^1.6.1",
-    "ssh2-sftp-client": "^1.0.5"
+    "ssh2-sftp-client": "^1.1.0"
   },
   "devDependencies": {
     "proxyquire": "^1.7.11",
