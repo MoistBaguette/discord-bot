@@ -35,7 +35,7 @@ function sendReply(message, reply) {
   if (Array.isArray(reply)) {
     reply = reply.join('\n');
   }
-  message.channel.sendMessage(reply);
+  message.channel.send(reply);
 }
 
 /**
@@ -131,7 +131,7 @@ const commandUploadPbo = {
 
       sendReply(message, reply);
       bot.channels.find('name', 'bot-log')
-        .sendMessage(`${message.author.username} tried to upload. reply:${reply}) url: ${url || ''} name: ${name || ''}`);
+        .send(`${message.author.username} tried to upload. reply:${reply}) url: ${url || ''} name: ${name || ''}`);
     })
   }
 };
